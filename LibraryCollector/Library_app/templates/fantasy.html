@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewpoint" content = "width = device - width , initial - scale = 1.0">
+    <title>Fantasy</title>
+</head>
+<body>
+    <style>
+
+        html, body {overflow-x: hidden; 
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 5px solid black;
+        }
+
+        h2 {          
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+
+        body {
+            margin:0;
+            font-family: Arial, Helvetica, serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #f4f4f4;
+        }
+
+        .image-1 {
+            width: 50%;
+            position: absolute;
+            top: 250px;
+            left: 400px;
+        }
+
+        .image-2 {
+            width: 50%;
+            position: absolute;
+            top: 250px;
+            left: 700px;
+        }
+
+        .image-3 {
+            width: 50%;
+            position: absolute;
+            top: 250px;
+            left: 1000px;
+        }
+
+        .image-4 {
+            width: 50%;
+            position: absolute;
+            top: 250px;
+            right: -325px;
+        }
+
+        .image-5 {
+            width: 50%;
+            position: absolute;
+            top: 250px;
+            right: -600px;
+        }
+
+        .image-6 {
+            width: 50%;
+            position: absolute;
+            top: 600px;
+            left: 400px;
+        }
+
+        .image-7{
+            width: 50%;
+            position: absolute;
+            top: 600px;
+            left: 700px;
+        }
+
+        .image-8{
+            width: 50%;
+            position: absolute;
+            top: 600px;
+            left: 1000px;
+        }
+
+        .image-9{
+            width: 50%;
+            position: absolute;
+            top: 600px;
+            right: -325px;
+        }
+
+        .image-10{
+            width: 50%;
+            position: absolute;
+            top: 600px;
+            right: -600px;
+        }
+
+        .text-1 {
+            width: 50%;
+            position: absolute;
+            top: 470px;
+            left: 400px;
+            line-height: 0.2;
+        }
+
+        .text-2 {
+            width: 50%;
+            position: absolute;
+            top: 470px;
+            left: 700px;
+            line-height: 0.2;
+        }
+
+        .text-3 {
+            width: 50%;
+            position: absolute;
+            top: 470px;
+            left: 1000px;
+            line-height: 0.2;
+        }
+
+        .text-4 {
+            width: 50%;
+            position: absolute;
+            top: 470px;
+            right: -325px;
+            line-height: 0.2;
+        }
+
+        .text-5 {
+            width: 50%;
+            position: absolute;
+            top: 470px;
+            right: -600px;
+            line-height: 0.2;
+        }
+        
+        .text-6 {
+            width: 50%;
+            position: absolute;
+            top: 820px;
+            left: 400px;
+            line-height: 0.2;
+        }
+
+        .text-7 {
+            width: 50%;
+            position: absolute;
+            top: 820px;
+            left: 700px;
+            line-height: 0.2;
+        }
+
+        .text-8 {
+            width: 50%;
+            position: absolute;
+            top: 820px;
+            left: 1000px;
+            line-height: 0.2;
+        }
+
+        .text-9 {
+            width: 50%;
+            position: absolute;
+            top: 820px;
+            right: -325px;
+            line-height: 0.2;
+        }
+
+        .text-10 {
+            width: 50%;
+            position: absolute;
+            top: 820px;
+            right: -600px;
+            line-height: 0.2;
+        }
+
+        .button-1 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 525px;
+            left: 400px;
+        }
+
+        .button-2 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 525px;
+            left: 700px;
+        }
+
+        .button-3 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 525px;
+            left: 1000px;
+        }
+
+        .button-4 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 525px;
+            right: 560px;
+        }
+
+        .button-5 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 525px;
+            right: 285px
+        }
+
+        .button-6 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 875px;
+            left: 400px;
+        }
+
+        .button-7 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 895px;
+            left: 700px;
+        }
+
+        .button-8 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 875px;
+            left: 1000px;
+        }
+
+        .button-9 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 875px;
+            right: 560px;
+        }
+
+        .button-10 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            top: 875px;
+            right: 285px;
+        }
+
+    </style>
+    <h1> LibraryCollection </h1>
+    
+
+    <h2> Fantasy </h2>
+
+    <div class = "sidebar">
+        <h2> Booklist</h2>
+            <ul>
+             <li><a href="fiction.html">Fiction</a></li>
+             <li><a href="action_adventure.html">Action + Adventure</a></li>
+             <li><a href="mistery.html">Mystery</a></li>
+             <li><a href="horror.html">Horror</a></li>
+             <li><a href="thriller_suspense.html">Thriller + Suspense</a></li>
+             <li><a href="romance.html">Romance</a></li>
+            </ul>
+        <h3> <li> <a href="home.html"> Home </h3> </a></li>
+    </div>
+    <div class = "image-1">
+    <img src = "https://cdn4.libris.ro/img/pozeprod/25464/25463214-1.jpg" height = "200">
+    </div>
+    <div class = "text-1">
+    <b> Title: Piranesi </b>
+    <p><b> Author: Susanna Clarke </b></p>
+    <p><b> Year: 2021 </b></p>
+    </div>
+    <a href= "https://www.goodreads.com/book/show/50202953-piranesi" class = "button-1"> View</a>
+    <div class = "image-2">
+    <img src= "https://images.gr-assets.com/books/1459349344l/23437156.jpg" height = "200">
+    </div>
+    <div class = "text-2">
+    <b> Title: Six of Crows </b>
+    <p> <b> Author: Leigh Bardugo </b></p>
+    <p> <b> Year: 2015 </b></p>
+    </div>
+    <a href= "https://www.amazon.co.uk/Six-Crows-Book-Leigh-Bardugo/dp/1780622287" class = "button-2"> View</a>
+    <div class = "image-3">
+    <img src = "https://cdn.kobo.com/book-images/007796fc-ce7e-4c4b-8744-0e9158e8f76e/1200/1200/False/stardust-4.jpg" height = "200">
+    </div>
+    <div class = "text-3">
+    <b> Title: Stardust</b>
+    <p><b> Author: Neil Gaiman</b></p>
+    <p><b> Year: 2010 </b></p>
+    </div>
+    <a href= "https://www.amazon.ca/Stardust-Neil-Gaiman-ebook/dp/B000FC13Y0" class = "button-3"> View</a>
+    <div class = "image-4">
+    <img src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1547625704i/43587154.jpg" height = "200">
+    </div>
+    <div class = "text-4">
+    <b> Title: Jade City</b>
+    <p><b> Author: Fonda Lee</b></p>
+    <p><b> Year: 2018 </b></p>
+    </div>
+    <a href= "https://www.amazon.com/Jade-City-Green-Bone-Saga/dp/0316440884" class = "button-4"> View</a>
+    <div class = "image-5">
+    <img src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1524764327i/29127.jpg" height = "200">
+    </div>
+    <div class = "text-5">
+    <b> Title: The Last Unicorn</b>
+    <p><b> Author: Peter S. Beagle </b></p>
+    <p><b> Year: 1968 </b></p>    
+    </div>
+    <a href= "https://www.amazon.com/Last-Unicorn-Peter-S-Beagle/dp/0345228928" class = "button-5"> View</a>
+    <div class = "image-6">
+    <img src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348469489i/7767021.jpg" height = "200">
+    </div>
+    <div class = "text-6">
+    <b> Title: Who Fears Death</b>
+    <p><b> Author: Nnedi Okorafor</b></p>
+    <p><b> Year: 2018</b></p>
+    </div>
+    <a href= "https://www.amazon.com/Who-Fears-Death-Nnedi-Okorafor/dp/0756407281" class = "button-6"> View</a>
+    <div class = "image-7">
+    <img src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1620324329i/50659467.jpg" height = "200">
+    </div>
+    <div class = "text-7">
+    <b> Title: A Court Of Thorns <p> And Roses </p></b>    
+    <p><b> Author: Sarah J. Maas</b></p>
+    <p><b> Year: 2020</b></p>
+    </div>
+    <a href= "https://www.amazon.co.uk/Court-Thorns-Roses-Sarah-Maas/dp/1408857863" class = "button-7"> View</a>
+    <div class = "image-8">
+    <img src = "https://i1.books-express.ro/be/9780670919963/the-power.jpg", height = "200">
+    </div>
+    <div class = "text-8">
+    <b> Title: The Power </b>
+    <p><b> Author: Naomi Alderman</b></p>
+    <p><b> Year: 2017</b></p>
+    </div>
+    <a href= "https://www.amazon.com/Power-Naomi-Alderman/dp/0316547611" class = "button-8"> View</a>
+    <div class = "image-9">
+    <img src = "https://upload.wikimedia.org/wikipedia/en/0/01/The_Fifth_Season_%28novel%29.jpg", height = "200">
+    </div>
+    <div class = "text-9">
+    <b> Title: The Fifth Season </b>
+    <p><b> Author: N. K. Jemisin</b></p>
+    <p><b> Year: 2016</b></p>
+    </div>
+    <a href= "https://www.amazon.com/Fifth-Season-Broken-Earth-Book-ebook/dp/B00H25FCSQ" class = "button-9"> View</a>
+    <div class = "image-10">
+        <img src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1339423248i/60931.jpg", height = "200">
+        </div>
+        <div class = "text-10">
+        <b> Title: Kindred </b>
+        <p><b> Author: Octavia E. Butler</b></p>
+        <p><b> Year: 2018</b></p>
+        </div>
+    <a href= "https://www.amazon.com/Kindred-Graphic-Adaptation-Damian-Duffy/dp/141970947X" class = "button-10"> View</a>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewpoint" content = "width = device - width , initial - scale = 1.0">
+    <title>Thriller + Suspense</title>
+</head>
+<body>
+    <style>
+    
+        html, body {overflow-x: hidden; 
+            }
+    
+            h1 {
+                text-align: center;
+                border-bottom: 5px solid black;
+            }
+    
+            h2 {          
+                text-align: center;
+            }
+    
+            h3 {
+                text-align: center;
+            }
+    
+    
+            body {
+                margin:0;
+                font-family: Arial, Helvetica, serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+    
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                background-color: #f4f4f4;
+            }
+    
+            .image-1 {
+                width: 50%;
+                position: absolute;
+                top: 250px;
+                left: 400px;
+            }
+    
+            .image-2 {
+                width: 50%;
+                position: absolute;
+                top: 250px;
+                left: 700px;
+            }
+    
+            .image-3 {
+                width: 50%;
+                position: absolute;
+                top: 250px;
+                left: 1000px;
+            }
+    
+            .image-4 {
+                width: 50%;
+                position: absolute;
+                top: 250px;
+                right: -325px;
+            }
+    
+            .image-5 {
+                width: 50%;
+                position: absolute;
+                top: 250px;
+                right: -600px;
+            }
+    
+            .image-6 {
+                width: 50%;
+                position: absolute;
+                top: 600px;
+                left: 400px;
+            }
+    
+            .image-7{
+                width: 50%;
+                position: absolute;
+                top: 600px;
+                left: 700px;
+            }
+    
+            .image-8{
+                width: 50%;
+                position: absolute;
+                top: 600px;
+                left: 1000px;
+            }
+    
+            .image-9{
+                width: 50%;
+                position: absolute;
+                top: 600px;
+                right: -325px;
+            }
+    
+            .image-10{
+                width: 50%;
+                position: absolute;
+                top: 600px;
+                right: -600px;
+            }
+    
+            .text-1 {
+                width: 50%;
+                position: absolute;
+                top: 470px;
+                left: 400px;
+                line-height: 0.2;
+            }
+    
+            .text-2 {
+                width: 50%;
+                position: absolute;
+                top: 470px;
+                left: 700px;
+                line-height: 0.2;
+            }
+    
+            .text-3 {
+                width: 50%;
+                position: absolute;
+                top: 470px;
+                left: 1000px;
+                line-height: 0.2;
+            }
+    
+            .text-4 {
+                width: 50%;
+                position: absolute;
+                top: 470px;
+                right: -325px;
+                line-height: 0.2;
+            }
+    
+            .text-5 {
+                width: 50%;
+                position: absolute;
+                top: 470px;
+                right: -600px;
+                line-height: 0.2;
+            }
+            
+            .text-6 {
+                width: 50%;
+                position: absolute;
+                top: 820px;
+                left: 400px;
+                line-height: 0.2;
+            }
+    
+            .text-7 {
+                width: 50%;
+                position: absolute;
+                top: 820px;
+                left: 700px;
+                line-height: 0.2;
+            }
+    
+            .text-8 {
+                width: 50%;
+                position: absolute;
+                top: 820px;
+                left: 1000px;
+                line-height: 0.2;
+            }
+    
+            .text-9 {
+                width: 50%;
+                position: absolute;
+                top: 820px;
+                right: -325px;
+                line-height: 0.2;
+            }
+    
+            .text-10 {
+                width: 50%;
+                position: absolute;
+                top: 820px;
+                right: -600px;
+                line-height: 0.2;
+            }
+    
+            .button-1 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 525px;
+                left: 400px;
+            }
+    
+            .button-2 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 525px;
+                left: 700px;
+            }
+    
+            .button-3 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 525px;
+                left: 1000px;
+            }
+    
+            .button-4 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 525px;
+                right: 560px;
+            }
+    
+            .button-5 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 525px;
+                right: 285px
+            }
+    
+            .button-6 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 875px;
+                left: 400px;
+            }
+    
+            .button-7 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 875px;
+                left: 700px;
+            }
+    
+            .button-8 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 875px;
+                left: 1000px;
+            }
+    
+            .button-9 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 875px;
+                right: 560px;
+            }
+    
+            .button-10 {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: grey;
+                text-align: center;
+                text-decoration: none;
+                position: absolute;
+                top: 875px;
+                right: 285px;
+            }
+        </style>
+    
+    <h1> LibraryCollection </h1>
+    <h2> Thriller + Suspense </h2>
+
+    <div class = "sidebar">
+        <h2> Booklist</h2>
+            <ul>
+             <li><a href="fantasy.html">Fantasy</a></li>
+             <li><a href="fiction.html">Fiction</a></li>
+             <li><a href="action_adventure.html">Action+Adventurey</a></li>
+             <li><a href="mistery.html">Mistery</a></li>
+             <li><a href="horror.html">Horror</a></li>
+             <li><a href="romance.html">Romance</a></li>
+            </ul>
+        <h3> <li> <a href="home.html"> Home </h3> </a></li>
+    </div>
+    <div class = "image-1">
+        <img src = "https://m.media-amazon.com/images/I/81HaJ8ADATL._AC_UF894,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-1">
+        <b> Title: Stay Awake </b>
+        <p><b> Author: Megan Goldin</b></p>
+        <p><b> Year: 2022 </b></p>
+        </div>
+        <a href = "https://www.amazon.co.uk/Stay-Awake-Megan-Goldin/dp/1250280664" class = "button-1"> View </a>
+    <div class = "image-2">
+        <img src = "https://m.media-amazon.com/images/I/415wJHkqUfL._SY780_.jpg" height = "200">
+        </div>
+        <div class = "text-2">
+        <b> Title: My Murder</b>
+        <p><b> Author: Katie Williams</b></p>
+        <p><b> Year: 2023 </b></p>
+        </div>
+        <a href = "https://www.amazon.co.uk/My-Murder-Katie-Williams-ebook/dp/B0BBLT9QWF" class = "button-2"> View </a>
+    <div class = "image-3">
+        <img src = "https://m.media-amazon.com/images/I/71gyHUKCLiL._AC_UF1000,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-3">
+        <b> Title: The Quiet Girl</b>
+        <p><b> Author: S.F. Kosa </b></p>
+        <p><b> Year: 2004 </b></p>
+        </div>
+        <a href = "https://www.amazon.com/Quiet-Girl-S-F-Kosa/dp/1728215560" class = "button-3"> View </a>
+    <div class = "image-4">
+        <img src = "https://m.media-amazon.com/images/I/81W35+Tj7dL.jpg" height = "200">
+        </div>
+        <div class = "text-4">
+        <b> Title: The Night Shift  </b>
+        <p><b> Author: Alex Finlay </b></p>
+        <p><b> Year: 2022 </b></p>
+        </div>
+        <a href = "https://www.amazon.de/Night-Shift-Alex-Finlay/dp/1250268885" class = "button-4"> View </a>
+    <div class = "image-5">
+        <img src = "https://m.media-amazon.com/images/I/71XmCZw489L._AC_UF1000,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-5">
+        <b> Title: Hidden Pictures </p> </b>
+        <p><b> Author: Jason Rekulak</b></p>
+        <p><b> Year: 2022</b></p>
+        </div>
+        <a href = "https://www.amazon.com/Hidden-Pictures/dp/0751583723" class = "button-5"> View </a>
+    <div class = "image-6">
+        <img src = "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585146341l/49398072.jpg" height = "200">
+        </div>
+        <div class = "text-6">
+        <b> Title: When No One Is Watching  </p> </b>
+        <p><b> Author: Alyssa Cole </b></p>
+        <p><b> Year: 2020</b></p>
+        </div>
+        <a href = "https://www.amazon.com/When-No-One-Watching-Thriller/dp/0062982656" class ="button-6"> View </a>
+    <div class = "image-7">
+        <img src = "https://m.media-amazon.com/images/I/81Wiq3QpLJL._AC_UF1000,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-7">
+        <b> Title: The Good Girl </p> </b>
+        <p><b> Author: Mary Kubica</b></p>
+        <p><b> Year: 2017</b></p>
+        </div>
+        <a href = "https://www.amazon.com/Good-Girl-Mary-Kubica/dp/0778319253" class = "button-7"> View </a>
+    <div class = "image-8">
+        <img src = "https://m.media-amazon.com/images/I/41ekaSSHF1L._SY780_.jpg" height = "200">
+        </div>
+        <div class = "text-8">
+        <b> Title: The Long Weekend </p> </b>
+        <p><b> Author: Gilly MacMillan </b></p>
+        <p><b> Year: 2022</b></p>
+        </div>
+        <a href = "https://www.amazon.co.uk/Long-Weekend-Gilly-Macmillan-ebook/dp/B098WMW5GD" class = "button-8"> View </a>
+    <div class = "image-9">
+        <img src = "https://m.media-amazon.com/images/I/91XpNSqu-0L._AC_UF1000,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-9">
+        <b> Title: The Child </p> </b>
+        <p><b> Author: Fiona Barton </b></p>
+        <p><b> Year: 2017</b></p>
+        </div>
+        <a href = "https://www.amazon.com/Child-Fiona-Barton/dp/0552172456" class = "button-9"> View </a>
+    <div class = "image-10">
+        <img src = "https://m.media-amazon.com/images/I/81G9RCABfKL._AC_UF1000,1000_QL80_.jpg" height = "200">
+        </div>
+        <div class = "text-10">
+        <b> Title: In a Dark, Dark Wood </p> </b>
+        <p><b> Author: Ruth Ware  </b></p>
+        <p><b> Year: 2016</b></p>
+        </div>
+        <a href = "https://www.amazon.com/Dark-Wood-Ruth-Ware/dp/1501112333" class = "button-10"> View </a>
+</body>
+</html>

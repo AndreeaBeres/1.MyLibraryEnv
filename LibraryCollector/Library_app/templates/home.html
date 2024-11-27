@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewpoint" content = "width = device - width , initial - scale = 1.0">
+    <title>Home</title>
+</head>
+<body>
+    <style>
+        html, body {overflow-x: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 5px solid black;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+        body {
+            margin:0;
+            font-family: Arial, Helvetica, serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .image-container{
+            text-align: center;
+        }
+        .shrink-image {
+            width: 300px;
+            height: auto;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #f4f4f4;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .clock{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            font-family: 'Chinese Rocks', serif;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .banner {
+            background-image:url('https://i.etsystatic.com/23719212/r/il/fb0389/2660290993/il_1140xN.2660290993_tiza.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            height: 500px;
+        }   
+
+        .image-right {
+            position: absolute;
+            top: 70px;
+            right: 10px;
+            width: 400px;
+            height: 100px;
+        }
+
+    </style>
+    <h1> LibraryCollection </h1>
+    <div class="centered-text"> 
+        Your recommended website where to choose your favorite books. 
+        <p>
+        </p>
+    </div>
+    <div class="image-container">
+        <img src ="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg" alt = "Book", class = "shrink-image">
+    </div>
+    <div class = "image-right">
+        <img src ="https://scontent.ftgm1-1.fna.fbcdn.net/v/t39.30808-6/457882146_2215250642169098_1143212147214810848_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=50QMDSdNCRcQ7kNvgEAQ6f7&_nc_ht=scontent.ftgm1-1.fna&oh=00_AYDoBj2zhSnjtdTedLn2lX299YcIsBk8sJISZ0qMyLF1Kw&oe=66DBAFA1" alt = "Unsure what book you want to read it first?">
+    </div>
+    <div class ="centered-text">
+        <p>
+        Imagine you want a book to read, but unsure which one to start with, so we recommend to check here what we have to offer.
+        </p>
+    </div>
+    <header>
+        <div class = "banner">
+            <div class = "sidebar">
+                <h2> Booklist</h2>
+                    <ul>
+                     <li><a href="fantasy.html">Fantasy</a></li>
+                     <li><a href="fiction.html">Fiction</a></li>
+                     <li><a href="action_adventure.html">Action + Adventure</a></li>
+                     <li><a href="mistery.html">Mystery</a></li>
+                     <li><a href="horror.html">Horror</a></li>
+                     <li><a href="thriller_suspense.html">Thriller + Suspense</a></li>
+                     <li><a href="romance.html">Romance</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+    <div class="clock" id="clock">
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const date = now.toLocaleDateString();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const timeString = 
+            date + ' ' +
+            (hours < 10 ? '0' : '') + hours + ':' +
+            (minutes < 10 ? '0' : '') + minutes + ':' +
+            (seconds < 10 ? '0' : '') + seconds;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+
+        updateClock();
+    </script>
+    </div>
+</body>
+{% block content %} {%endblock content %}
+</html>
